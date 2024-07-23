@@ -1,0 +1,157 @@
+#searchSelect{
+    display: flex;
+    justify-content: center;
+
+}
+
+#searchSelect div{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    background-color: #1DB954;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 10rem;
+    font-size: 10px;
+    border-radius: 9999px;
+    
+}
+
+#resultsSearch {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    
+}
+
+.no-wrap {
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden;    /* Esconde o texto que vaza */
+    text-overflow: ellipsis; /* Adiciona "..." no final do texto que vaza */
+    max-width: 300px;
+  }
+
+
+  #resultsSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    margin-top: -70px;
+    
+  }
+  #resultsSearch div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+
+  }
+
+  #resultsSearch img {
+    padding-right: 10px;
+  }
+
+  body {
+    background-color: black;
+  }
+
+
+  .hidden2{
+    display: none;;
+  }
+
+
+  .popup {
+    display: none; /* Esconde o popup por padrão */
+    position: fixed; /* Faz o popup flutuar sobre a página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semitransparente para cobrir o conteúdo */
+    z-index: 1000; /* Garante que o popup está sobre outros elementos */
+  }
+  
+  .popup-content {
+    background-color: rgb(26, 28, 35);
+    margin: 15% auto; /* Centraliza o conteúdo verticalmente e horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 500px;
+    color: white;
+    font-size: 15px;
+     
+  }
+
+  #playlistForm {
+    padding: 10px;
+  }
+
+  #playlistForm div{
+    padding: 10px;
+  }
+  
+  #playlistForm label {
+    margin-right: 10px;
+  }
+
+  #playlistForm input {
+    color: black;
+    padding-left: 10px;
+  }
+
+  #playlistForm button {
+    background-color: rgb(124, 56, 239);
+    width: 100%;
+    padding: 10px;
+    border-radius: 9999px;
+  }
+
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 770px) {
+    #resultsSearch {
+      margin-top: -200px;
+    }
+  }
